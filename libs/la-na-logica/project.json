@@ -1,0 +1,19 @@
+{
+  "name": "la-na-logica",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/la-na-logica/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/la-na-logica",
+        "main": "libs/la-na-logica/src/index.ts",
+        "tsConfig": "libs/la-na-logica/tsconfig.lib.json",
+        "assets": ["libs/la-na-logica/*.md"]
+      }
+    }
+  }
+}
